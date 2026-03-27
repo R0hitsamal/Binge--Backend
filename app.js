@@ -21,7 +21,9 @@ app.use(
 );
 
 DbConnection();
-
+app.get("/", (req,res)=>{
+  res.send("Hello")
+})
 app.use("/api/auth", userRouter);
 app.use("/api/video", videoRouter);
 app.use("/api/comments", commentRouter);
