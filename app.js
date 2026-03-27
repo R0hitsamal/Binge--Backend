@@ -15,7 +15,7 @@ const app = express();
 app.use(express.json())
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://your-frontend.vercel.app"],
+    origin: ["http://localhost:5173", "https://binge-streamming.vercel.app/"],
     credentials: true,
   }),
 );
